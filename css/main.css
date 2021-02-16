@@ -1,0 +1,20 @@
+body{
+    margin-top: 40px;
+}
+.row{
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 20px;
+}
+.padre{
+    background: blue;
+    padding: 20px;
+}
+.hijo{
+    padding: 50px;
+    width: 200px;
+    background: black;
+    color: white;
+    margin: 20px;
+}

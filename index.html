@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!--
+        col-    < 576px
+        col-sm  >= 576px
+        col-md  >= 768px
+        col-lg  >= 992px
+        col-xl  >= 1200px
+    -->
+
+    <div class="container">
+        <header class="row">
+            <div class="col col-auto">
+                <h1 class="border border-primary">Nombre del sitio</h1>
+            </div>
+        </header>
+
+        <section class="row banner">
+            <div class="col">
+                <h2>Titulo banner</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </section>
+        <!-- vertical: ai align-items start, end, center-->
+        <section class="row servicios align-items-md-end align-items-lg-center">
+            <div class="servicio col-sm-6 col-md-4 col-lg-3">
+                <h3>Titulo servicio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dicta, dolorem doloremque earum eos facere libero numquam odio odit pariatur, perferendis quam quod reprehenderit. Non, ratione, sint! Deserunt iste itaque laboriosam modi officia quaerat tempora voluptatem. Accusamus ad adipisci animi architecto aut beatae consequuntur distinctio esse explicabo facilis fugiat id ipsam laboriosam libero magni natus neque nesciunt, nisi nobis obcaecati odit officia placeat repudiandae rerum veniam voluptas voluptatibus. Ad, cumque sunt! Accusantium dolor dolores expedita, in mollitia nobis praesentium quos reiciendis repellendus ullam. Ab accusantium commodi culpa delectus expedita harum illo minus molestias nostrum obcaecati odit qui, quidem sed sequi!</p></div>
+            <div class="servicio col-sm-6 col-md-4 col-lg-3 align-self-start">
+                <h3>Titulo servicio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cum hic magnam velit. Consectetur ex facere hic perferendis soluta voluptatum.</p></div>
+            <div class="servicio col-sm-6 col-md-4 col-lg-3">
+                <h3>Titulo servicio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam consequatur deserunt dignissimos dolor est id, illo inventore labore laborum nemo nobis praesentium quaerat quasi recusandae unde voluptates? Adipisci asperiores blanditiis explicabo fugiat laborum libero necessitatibus perferendis saepe sit voluptatum. Accusantium aspernatur culpa debitis eligendi possimus quisquam, tempore veniam voluptatem!</p></div>
+            <div class="servicio col-sm-6 col-md-12 col-lg-3">
+                <h3>Titulo servicio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam.</p></div>
+        </section>
+
+        <!-- horizontal: jc justify-content between, around, center-->
+        <!-- offset: o1...-->
+        <!-- order (default group 0): or1...-->
+        <!-- border, border-end ...-->
+        <!-- border-end-0 ...-->
+        <!-- border-primary ...-->
+        <!-- rounded, rounded-top, rounded-start, end, bottom, circle ...-->
+        <!-- rounded-0 to erase default round-->
+        <section class="row servicios justify-content-between">
+            <div class="servicio col-sm-6 col-md-4 col-lg-3 border-right">
+                <h3>1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+            <div class="servicio col-sm-6 col-md-4 col-lg-3 border">
+                <h3>2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+            <div class="servicio col-sm-6 col-md-4 col-lg-3 border-bottom">
+                <h3>3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+        </section>
+
+        <section class="row">
+            <div class="col-md col-lg-9 sobre-nosotros">
+                <div class="row">
+                    <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, officiis!</div>
+                    <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, velit?</div>
+                    <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, sed!</div>
+                </div>
+            </div>
+            <aside class="col-md col-lg-3">
+                <ul>
+                    <li class="row">
+                        <div class="col-6">Lorem ipsum dolor sit amet.</div>
+                        <div class="col-6">Lorem ipsum dolor sit amet.</div>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+        <!--float-start, -end para hijos // clearfix para padre que ocupe el espacio de los hijos-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="padre clearfix">
+                        <div class="hijo float-md-end float-lg-start">Izquierda</div>
+                        <div class="hijo float-end">Derecha</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--text-primary, secondary, success, danger, warning, info, light, dark, muted, white-->
+        <!--sirve para p, a-->
+        <!--bg-primary, secondary, success, danger, warning, info, light, dark, muted, white-->
+        <!--sirve para divs, puede usar text-primary... para los colores del texto de adentro-->
+
+        <!--
+            display properties
+
+            .d-{valor} para extra pequeño en adelante
+            .d-{breakpoint}-{valor} para sm, md, lg, xl
+
+            none
+            inline
+            inline-block
+            block - en todo el ancho
+            table
+            table-cell
+            table-row
+            flex
+            inline-flex
+        -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Display</h1>
+                    <div>
+                        <h3>Display none</h3>
+                        <p class="d-none d-md-block">Solo me veo en dispositivos grandes</p>
+                    </div>
+                    <div>
+                        <h3>Display block</h3>
+                        <a href="#" class="bg-primary text-white d-md-block">Lorem ipsum.</a>
+                    </div>
+                    <div>
+                        <h3>Display inline-block</h3>
+                        <a href="#" class="bg-primary text-white d-inline-block">Lorem ipsum.</a>
+                        <a href="#" class="bg-success text-white d-inline-block">Lorem ipsum.</a>
+                    </div>
+                    <div>
+                        <h3>Display flex</h3>
+                        <div class="d-flex">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, magni!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis delectus impedit ipsam itaque, minus mollitia possimus repellendus soluta voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="row">
+            <div class="col-md-6 col-xl-auto">Todos los derechos reservados.</div>
+            <div class="col-md-6 col-xl-auto"><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></div>
+        </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
